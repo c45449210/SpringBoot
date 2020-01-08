@@ -1,0 +1,12 @@
+<templateSet group="ABCDEFG">
+  <template name="cmt" value="/**&#10; * @$user$ on $date$  $time$&#10; * @param:$params$&#10; * @return:$return$&#10; */" description="add comment" toReformat="false" toShortenFQNames="true">
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="methodParameters()" defaultValue="" alwaysStopAt="false" />
+    <variable name="return" expression="methodReturnType()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
